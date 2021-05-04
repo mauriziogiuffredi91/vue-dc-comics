@@ -2,7 +2,7 @@
   <div id="app">
     
     <!-- Header -->
-    header
+    <Header />
 
     <!-- Main -->
 
@@ -11,12 +11,13 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
 
 
 export default {
   name: 'App',
   components: {
-    
+      Header
   }
 }
 </script>
