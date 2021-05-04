@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="logo-box">
-            <a href="">logo</a>
+            <a href="/">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </a>
 
         </div>
 
@@ -36,6 +38,8 @@ export default {
     header{
         display: flex;
         justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
 
     }
     
