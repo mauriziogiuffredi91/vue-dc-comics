@@ -1,28 +1,57 @@
 <template>
     <header>
-        <div class="logo-box">
-            <a href="/">
-                <img src="../assets/img/dc-logo.png" alt="">
-            </a>
+        
+        <a href="/">
+            <img src="../assets/img/dc-logo.png" alt="">
+        </a>
 
-        </div>
+        
 
         
 
         <nav>
             <ul>
                 <li>
-                    <a href=""><h4>characters</h4></a>
-                    <a href=""><h4>comics</h4></a>
-                    <a href=""><h4>movies</h4></a>
-                    <a href=""><h4>tv</h4></a>
-                    <a href=""><h4>games</h4></a>
-                    <a href=""><h4>collectibles</h4></a>
-                    <a href=""><h4>videos</h4></a>
-                    <a href=""><h4>fans</h4></a>
-                    <a href=""><h4>news</h4></a>
-                    <a href=""><h4>shop</h4></a>
+                    <a href="/"><h5>characters</h5></a>
+                    
                 </li>
+
+                <li>
+                    <a href="/"><h5>comics</h5></a>
+                </li>
+
+                <li>
+                    <a href="/"><h5>movies</h5></a>
+                </li>
+
+                <li>
+                    <a href="/"><h5>tv</h5></a>
+                </li>
+
+                <li>
+                    <a href="/"><h5>games</h5></a>
+                </li>
+
+                <li>
+                    <a href="/"><h5>collectibles</h5></a>
+                </li>
+                    
+                <li>
+                    <a href="/"><h5>videos</h5></a>
+                </li>
+                    
+                <li>
+                    <a href="/"><h5>fans</h5></a>
+                </li>    
+                    
+                <li>
+                    <a href="/"><h5>news</h5></a>
+                </li>
+                
+                <li>
+                    <a href="/"><h5>shop</h5></a>
+                </li>
+                    
             </ul>
         </nav>
     </header>
@@ -40,20 +69,29 @@ export default {
         justify-content: space-between;
         max-width: 1100px;
         margin: 0 auto;
+        padding: 1rem;
 
     }
-    
-    nav ul li{
-        display: inline-block;
-        list-style: none;
+        
         
 
-
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 20px;
     }
+    
+    nav ul li:last-child{
+        margin-right: 0;
+    }
+
+
+        
 
     nav ul li a{
         text-decoration: none;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.835);
     }
+        
 </style>

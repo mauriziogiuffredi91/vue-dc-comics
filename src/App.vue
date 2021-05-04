@@ -22,6 +22,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 
+  /* Regole generali*/
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    
+  }
 </style>
