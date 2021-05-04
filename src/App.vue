@@ -32,6 +32,6 @@ export default {
   }
 
   body{
-    
+    font-family: 'Roboto Slab', serif;
   }
 </style>

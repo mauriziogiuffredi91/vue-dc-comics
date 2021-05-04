@@ -74,7 +74,9 @@ export default {
     }
         
         
-
+    nav ul{
+        padding-top: 2rem;
+    }
     nav ul li{
         list-style: none;
         display: inline-block;
