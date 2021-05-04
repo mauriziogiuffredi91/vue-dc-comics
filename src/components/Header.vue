@@ -94,6 +94,11 @@ export default {
         text-decoration: none;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.835);
+        transition: color .2s;
+    }
+
+    nav ul li a:hover{
+        color: dodgerblue;
     }
         
 </style>
