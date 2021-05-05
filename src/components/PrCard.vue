@@ -18,11 +18,17 @@ export default {
 <style scoped>
 
     .box-fumetto{
-        margin-right: 10px;
+        margin-right: 25px;
+        margin-bottom: 20px 0;
+    }
+
+    .box-fumetto:last-of-type{
+        margin-right: 0;
     }
     .box-fumetto img{
         height: 184px;
         width: 184px;
+        object-fit: cover;
         
     }
         

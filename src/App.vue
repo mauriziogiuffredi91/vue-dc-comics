@@ -43,7 +43,7 @@ export default {
   }
 
   .main-box{
-    max-width: 1200px;
+    max-width: 1255px;
     margin: 0 auto;
   }
 </style>
