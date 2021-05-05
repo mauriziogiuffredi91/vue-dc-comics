@@ -11,7 +11,7 @@
 
         <nav>
             <ul>
-                <li v-for="(link, index) in links" :key="index">
+                <li :class="{ active: link.current }" v-for="(link, index) in links" :key="index">
                     <a :class="{ active: link.current }" :href="link.url"><h5>{{link.oggetto}}</h5></a>
                     
                 </li>
@@ -54,7 +54,7 @@ export default {
         justify-content: space-between;
         max-width: 1100px;
         margin: 0 auto;
-        padding: 1rem;
+        padding-top: 1rem;
 
     }
         
@@ -66,13 +66,17 @@ export default {
         list-style: none;
         display: inline-block;
         margin-right: 20px;
+        height: 5rem;
     }
     
     nav ul li:last-child{
         margin-right: 0;
     }
 
-
+    nav ul li:hover,
+    nav ul li.active{
+        border-bottom: 8px solid dodgerblue;
+    }
         
 
     nav ul li a{
@@ -80,11 +84,13 @@ export default {
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.835);
         transition: color .2s;
+        
     }
 
     nav ul li a:hover,
     nav ul li a.active{
         color: dodgerblue;
+        
     }
         
 </style>
