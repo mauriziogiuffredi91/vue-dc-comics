@@ -28,9 +28,11 @@ export default {
     .box-fumetto img{
         height: 184px;
         width: 184px;
-        object-fit: cover;
+        cursor: pointer;
+        
         
     }
+        
         
         
 
