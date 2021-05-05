@@ -7,6 +7,8 @@
     <!-- Main -->
 
     <Banner/>
+
+    <Series/>
     <!-- Footer -->
   </div>
 </template>
@@ -14,6 +16,7 @@
 <script>
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
+import Series from '@/components/Series.vue';
 
 
 export default {
@@ -21,6 +24,7 @@ export default {
   components: {
       Header,
       Banner,
+      Series,
   }
 }
 </script>
@@ -36,5 +40,10 @@ export default {
 
   body{
     font-family: 'Roboto Slab', serif;
+  }
+
+  .main-box{
+    max-width: 1200px;
+    margin: 0 auto;
   }
 </style>

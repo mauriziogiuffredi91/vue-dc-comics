@@ -1,5 +1,7 @@
 <template>
-    <header>
+    <header class="main-box">
+
+        
         
         <a href="/">
             <img src="../assets/img/dc-logo.png" alt="">
@@ -52,11 +54,10 @@ export default {
     header{
         display: flex;
         justify-content: space-between;
-        max-width: 1100px;
-        margin: 0 auto;
         padding-top: 1rem;
 
     }
+        
         
         
     nav ul{

@@ -1,7 +1,7 @@
 <template>
   <section class="content">
-    <div class="box-main">
-        <h1>Content goes here</h1>
+    <div class="main-box">
+        
     </div>
     
   </section>
@@ -15,14 +15,13 @@ export default {
 
 <style scoped>
     .content{
-        background-color: #1c1c1c;
+        background-image: url('../assets/img/jumbotron.jpg');
+        height: 369px;
+
         
     }
 
-    .box-main{
-        max-width: 1100px;
-        margin: 0 auto;
-    }
+    
 
     .content h1{
         color: floralwhite;
