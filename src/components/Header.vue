@@ -11,46 +11,12 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="/"><h5>characters</h5></a>
+                <li v-for="(link, index) in links" :key="index">
+                    <a href="/"><h5>{{link.oggetto}}</h5></a>
                     
                 </li>
 
-                <li>
-                    <a href="/"><h5>comics</h5></a>
-                </li>
-
-                <li>
-                    <a href="/"><h5>movies</h5></a>
-                </li>
-
-                <li>
-                    <a href="/"><h5>tv</h5></a>
-                </li>
-
-                <li>
-                    <a href="/"><h5>games</h5></a>
-                </li>
-
-                <li>
-                    <a href="/"><h5>collectibles</h5></a>
-                </li>
-                    
-                <li>
-                    <a href="/"><h5>videos</h5></a>
-                </li>
-                    
-                <li>
-                    <a href="/"><h5>fans</h5></a>
-                </li>    
-                    
-                <li>
-                    <a href="/"><h5>news</h5></a>
-                </li>
                 
-                <li>
-                    <a href="/"><h5>shop</h5></a>
-                </li>
                     
             </ul>
         </nav>
@@ -60,6 +26,24 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return {
+            links:[
+                {oggetto: 'characters', url: '/characters/page', current: false},
+                {oggetto: 'comics', url: '/comics/page', current: false},
+                {oggetto: 'movies', url: '/movies/page', current: false},
+                {oggetto: 'tv', url: '/tv/page', current: false},
+                {oggetto: 'games', url: '/games/page', current: false},
+                {oggetto: 'collectibles', url: '/collectibles/page', current: false},
+                {oggetto: 'videos', url: '/videos/page', current: false},
+                {oggetto: 'fans', url: '/fans/page', current: false},
+                {oggetto: 'news', url: '/news/page', current: false},
+                {oggetto: 'shop', url: '/shop/page', current: false},
+                
+                
+            ]
+        }
+    }
 }
 </script>
 
@@ -97,7 +81,8 @@ export default {
         transition: color .2s;
     }
 
-    nav ul li a:hover{
+    nav ul li a:hover,
+    nav ul li a.active{
         color: dodgerblue;
     }
         
