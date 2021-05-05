@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li v-for="(link, index) in links" :key="index">
-                    <a href="/"><h5>{{link.oggetto}}</h5></a>
+                    <a :class="{ active: link.current }" :href="link.url"><h5>{{link.oggetto}}</h5></a>
                     
                 </li>
 
@@ -30,7 +30,7 @@ export default {
         return {
             links:[
                 {oggetto: 'characters', url: '/characters/page', current: false},
-                {oggetto: 'comics', url: '/comics/page', current: false},
+                {oggetto: 'comics', url: '/comics/page', current: true},
                 {oggetto: 'movies', url: '/movies/page', current: false},
                 {oggetto: 'tv', url: '/tv/page', current: false},
                 {oggetto: 'games', url: '/games/page', current: false},
@@ -41,9 +41,10 @@ export default {
                 {oggetto: 'shop', url: '/shop/page', current: false},
                 
                 
-            ]
-        }
-    }
+            ],
+        };
+    },
+    methods: {},
 }
 </script>
 
