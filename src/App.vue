@@ -12,6 +12,8 @@
     <!-- Footer -->
 
     <Hero/>
+
+    <Footertop/>
   </div>
 </template>
 
@@ -20,6 +22,7 @@ import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Series from '@/components/Series.vue';
 import Hero from '@/components/Hero.vue';
+import Footertop from '@/components/Footertop.vue';
 
 
 export default {
@@ -29,6 +32,7 @@ export default {
       Banner,
       Series,
       Hero,
+      Footertop,
   }
 }
 </script>
