@@ -1,6 +1,6 @@
 <template>
     <div class="box-fumetto">
-        <img :src="specifies.thumb" alt="">
+        <img :src="specifies.thumb" alt="`${specifies.type}`">
 
         <h5 >{{specifies.series}}</h5>
     </div>

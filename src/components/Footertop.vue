@@ -21,15 +21,38 @@
                     <li>
                         <h3>Shop</h3>
                     </li>
+
+                    <li class="options" 
+                        v-for="(items, index) in shop" 
+                        :key="index"
+                    >
+                    <a href="/">{{items.oggetto}}</a>
+
+                    </li>
                 </ul>
                 <ul>
                     <li>
                         <h3>Dc</h3>
                     </li>
+                    <li class="options" 
+                        v-for="(items, index) in dc" 
+                        :key="index"
+                    >
+                    <a href="/">{{items.oggetto}}</a>
+
+                    </li>
                 </ul>
                 <ul>
                     <li>
                         <h3>Sites</h3>
+                    </li>
+
+                    <li class="options" 
+                        v-for="(items, index) in sites" 
+                        :key="index"
+                    >
+                    <a href="/">{{items.oggetto}}</a>
+
                     </li>
                 </ul>
             </div>
@@ -100,8 +123,10 @@ export default {
 <style scoped>
 
     section{
+        position: relative;
         background-image: url('../assets/img/footer-bg.jpg');
         padding: 20px;
+        background-size: cover;
     }
 
     .main-box{
@@ -124,14 +149,36 @@ export default {
         list-style: none;
         text-decoration: none;
         
-
     }
+
+    
+        
+
 
     .text-container ul li h3{
         color: ghostwhite;
         text-transform: uppercase;
+        margin: 10px 0;
 
     }
+
+    .text-container ul li a{
+        text-decoration: none;
+        color: #959595;
+        width: 200px;
+        display: inline-block;
+        font-size: 12px;
+    }
+        
+    .logo-container img{
+        position: absolute;
+        overflow: hidden;
+        top: -20%;
+        right: 18%;
+        
+
+    }
+        
 
     
 

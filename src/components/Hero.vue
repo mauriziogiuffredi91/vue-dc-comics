@@ -65,7 +65,7 @@ export default {
 
 <style scoped>
     section{
-        background-color: dodgerblue;
+        background-color: #1e80ff;
     }
     .main-box{
         padding: 40px;
