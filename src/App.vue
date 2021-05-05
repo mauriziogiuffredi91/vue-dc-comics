@@ -43,21 +43,7 @@ export default {
 }
 </script>
 
-<style>
-
-  /* Regole generali*/
-  *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-  body{
-    font-family: 'Roboto Slab', serif;
-  }
-
-  .main-box{
-    max-width: 1255px;
-    margin: 0 auto;
-  }
+<style lang="scss">
+@import './styles/general.scss';
+  
 </style>
