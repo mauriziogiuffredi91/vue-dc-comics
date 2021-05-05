@@ -129,11 +129,13 @@ export default {
     .current-comics{
         background-color: #1c1c1c;
         padding: 54px 0;
+        
     }
 
     .current-comics .main-box{
         display: flex;
         flex-wrap: wrap;
+
         
     }
 

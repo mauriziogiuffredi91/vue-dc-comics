@@ -17,18 +17,23 @@ export default {
 
 <style scoped>
 
+    .box-fumetto{
+        margin-right: 10px;
+    }
     .box-fumetto img{
-        margin: 10px;
         height: 184px;
         width: 184px;
         
     }
         
+        
 
     .box-fumetto h5{
         color: floralwhite;
         text-transform: uppercase;
-        padding-left: 10px;
+        width: 184px;
+        padding: 10px 0;
+        font-weight: 400;
     }
 
 </style>
