@@ -8,7 +8,11 @@
 
                 <h5>Action Comics</h5>
             </div> -->
-            <PrCard v-for="(product, index) in products" :key="index"/>
+            <PrCard 
+                v-for="(product, index) in products" 
+                :key="index" 
+                :specifies="product"
+            />
             
         </div>
 
@@ -134,20 +138,7 @@ export default {
     }
 
 
-    .box-fumetto img{
-        /*test riquadri*/ 
-        background-color: gray;
-        height: 180px;
-        width: 180px;
-        margin: 10px;
-        
-    }
-
-    .box-fumetto h5{
-        color: floralwhite;
-        text-transform: uppercase;
-        padding-left: 10px;
-    }
+    
 
 
 
