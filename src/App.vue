@@ -17,6 +17,7 @@
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Series from '@/components/Series.vue';
+import Hero from '@/components/Hero.vue';
 
 
 export default {
@@ -25,6 +26,7 @@ export default {
       Header,
       Banner,
       Series,
+      Hero,
   }
 }
 </script>
