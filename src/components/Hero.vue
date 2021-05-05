@@ -2,9 +2,10 @@
     <section class="main-box">
         <ul>
             <li v-for="(object, index) in links" :key="index" >
-                <img src="`./assets/img/${object.img}.png`" alt="">
-                <!-- :src per inserire immagine dinamica da js ci vogliono backtik `` e inserimento dinamico -->
-                <a href="/">{{object.text}}</a>
+                <!-- <img :src="`object.img`" alt="">
+                 :src per inserire immagine dinamica da js ci vogliono backtik `` e inserimento 
+                <a href="/">{{object.text}}</a> 
+                -->
             </li>
 
             
@@ -19,11 +20,11 @@ export default {
     data() {
         return {
             links:[
-                {text: 'digital comics', url: '/digitalComics/page', current: false, img:'buy-comics-digital-comics'},
-                {text: 'dc merchandise', url: '/dcMerchandise/page', current: false, img: 'buy-comics-merchandise'},
-                {text: 'subscription', url: '/subScription/page', current: false, img: 'buy-comics-subscriptions'},
-                {text: 'comic shop locator', url: '/comicShopLocator/page', current: false, img: 'buy-comics-shop-locator'},
-                {text: 'dc power visa', url: '/dcPowerVisa/page', current: false, img: 'buy-dc-power-visa'},
+                {text: 'digital comics', url: '/digitalComics/page', current: false, img:'../assets/img/buy-comics-digital-comics.png'},
+                {text: 'dc merchandise', url: '/dcMerchandise/page', current: false, img: '../assets/img/buy-comics-merchandise.png'},
+                {text: 'subscription', url: '/subScription/page', current: false, img: '../assets/img/buy-comics-subscriptions.png'},
+                {text: 'comic shop locator', url: '/comicShopLocator/page', current: false, img: '../assets/img/buy-comics-shop-locator.png'},
+                {text: 'dc power visa', url: '/dcPowerVisa/page', current: false, img: '../assets/img/buy-dc-power-visa.png'},
                 
                 
                 

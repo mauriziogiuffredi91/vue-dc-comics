@@ -10,6 +10,8 @@
 
     <Series/>
     <!-- Footer -->
+
+    <Hero/>
   </div>
 </template>
 
