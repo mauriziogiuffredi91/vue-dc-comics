@@ -29,6 +29,8 @@ export default {
         height: 184px;
         width: 184px;
         cursor: pointer;
+        object-fit: cover;
+        object-position: top;
         
         
     }
