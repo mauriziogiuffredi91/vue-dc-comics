@@ -104,10 +104,16 @@ export default {
     }
 
     ul li img{
-        width: 45px;
+        width: 50px;
         height: 60px;
         margin-right: 10px;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
         
+    }
+
+    ul li img:hover{
+        transform: scale(1.5);
     }
 
 </style>

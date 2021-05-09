@@ -169,6 +169,10 @@ export default {
         display: inline-block;
         font-size: 12px;
     }
+
+    .text-container ul li a:hover{
+        color: white;
+    }
         
     .logo-container img{
         position: absolute;
