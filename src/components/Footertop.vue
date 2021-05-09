@@ -11,8 +11,8 @@
                     </li>
 
                     <li class="options" 
-                        v-for="(items, index) in dcComics" 
-                        :key="index"
+                        v-for="items in dcComics" 
+                        :key="items.oggetto"
                     >
                     <a href="/">{{items.oggetto}}</a>
 
@@ -23,8 +23,8 @@
                     </li>
 
                     <li class="options" 
-                        v-for="(items, index) in shop" 
-                        :key="index"
+                        v-for="items in shop" 
+                        :key="items.oggetto"
                     >
                     <a href="/">{{items.oggetto}}</a>
 
@@ -35,8 +35,8 @@
                         <h3>Dc</h3>
                     </li>
                     <li class="options" 
-                        v-for="(items, index) in dc" 
-                        :key="index"
+                        v-for="items in dc" 
+                        :key="items.oggetto"
                     >
                     <a href="/">{{items.oggetto}}</a>
 
@@ -48,8 +48,8 @@
                     </li>
 
                     <li class="options" 
-                        v-for="(items, index) in sites" 
-                        :key="index"
+                        v-for="items in sites" 
+                        :key="items.oggetto"
                     >
                     <a href="/">{{items.oggetto}}</a>
 
