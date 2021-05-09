@@ -48,10 +48,41 @@ export default {
 
     }
 
+    .box-left button{
+        background-color: #303030;
+        color: white;
+        padding: 15px;
+        border: 2px solid dodgerblue;
+        cursor: pointer;
+    }
+
+    button:hover,
+    button:active{
+        background-color: rgba(30, 143, 255, 0.548);
+    }
+
+    button h3{
+        text-transform: uppercase;
+    }
+
     .main-box .boxright{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 30%;
+    }
+
+    .boxright h3{
+        color: dodgerblue;
+        text-transform: uppercase;
+    }
+
+    .boxright img{
+        transition: all .2s ease-in-out;
+        
+    }
+
+    .boxright img:hover{
+        transform: scale(1.1);
     }
 </style>
